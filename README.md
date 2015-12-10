@@ -8,7 +8,7 @@
 Custom UIButton class for a nice looking Button with Bounce-Effect
 
 <p align="center">
-<img width=400 src="./Preview/STOptimizedUIButton_Screenshot1.png" alt="Screenshot" title="Screenshot">
+<img width=200 src="./Preview/STOptimizedUIButton_Screenshot1.png" alt="Screenshot" title="Screenshot">
 </p>
 
 ## Usage
