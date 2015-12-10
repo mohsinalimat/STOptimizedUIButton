@@ -37,6 +37,7 @@ extension UIButton{
         let wrapper = objc_getAssociatedObject(self, &touchDownKey) as! TouchDownWrapper
         wrapper.block(sender: sender)
     }
+    
     func addTouchUpAnimation(block: touchUpActionBlock) {
         objc_setAssociatedObject(self, &touchUpKey, TouchUpWrapper(block: block), objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         addTarget(self, action: "handleTouchUpAction:", forControlEvents: .TouchUpInside)
@@ -48,7 +49,7 @@ extension UIButton{
         wrapper.block(sender: sender)
     }
     
-    public func toAppStoreButton(setBorderColor borderColor : UIColor,setTitleColor titleColor : UIColor, setFillColor fillColor : UIColor, setHighlightedTextColor highlightedTextColor : UIColor,isFilled filled : Bool, shoudlAnimate animate : Bool){
+    public func toOptimizedButton(setBorderColor borderColor : UIColor,setTitleColor titleColor : UIColor, setFillColor fillColor : UIColor, setHighlightedTextColor highlightedTextColor : UIColor,isFilled filled : Bool, shoudlAnimate animate : Bool){
         self.layer.borderWidth = 1.0
         self.layer.borderColor = borderColor.CGColor
         self.layer.cornerRadius = 5.0
@@ -69,7 +70,6 @@ extension UIButton{
                 self.touchUpAnimation()
             }
         }
-       
     }
     
     private func touchUpAnimation(){
@@ -79,7 +79,6 @@ extension UIButton{
                 UIView.animateWithDuration(0.3, animations: { () -> Void in
                     self.transform = CGAffineTransformIdentity
                 })
-                
         })
     }
     
@@ -88,7 +87,6 @@ extension UIButton{
             self.transform = CGAffineTransformMakeScale(0.9, 0.9)
         })
     }
-
     
     public func addBounceAnimation(){
         self.addTouchDownAnimation { sender in
@@ -108,6 +106,4 @@ extension UIButton{
         UIGraphicsEndImageContext()
         return image
     }
-
-    
 }

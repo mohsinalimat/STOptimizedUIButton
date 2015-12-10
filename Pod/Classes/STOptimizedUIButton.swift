@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 @IBDesignable
 class STOptimizedUIButton: UIButton {
     @IBInspectable var cornerRadius: CGFloat = 5.0 {

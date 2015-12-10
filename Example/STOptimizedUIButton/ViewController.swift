@@ -11,21 +11,21 @@ import STOptimizedUIButton
 
 class ViewController: UIViewController {
     
+    // Storyboard IBOutlet
     @IBOutlet weak var letsGoButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var buyButton: UIButton!
     @IBOutlet weak var unlockButton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.unlockButton.toAppStoreButton(setBorderColor: UIColor.blueColor(), setTitleColor: UIColor.whiteColor(), setFillColor: UIColor.blueColor(), setHighlightedTextColor: UIColor.whiteColor(),isFilled: true, shoudlAnimate: true)
-        
+        // You also can optimize your UIButton in your code by calling '.toOptimizedButton'
+        self.unlockButton.toOptimizedButton(setBorderColor: UIColor.blueColor(), setTitleColor: UIColor.whiteColor(), setFillColor: UIColor.blueColor(), setHighlightedTextColor: UIColor.whiteColor(),isFilled: true, shoudlAnimate: true)
     }
     
     @IBAction func buttonTouched(sender: UIButton) {
+        // Action when Button Touched
         print("Button with Title: \"\(sender.currentTitle!)\" was tapped")
         
     }
