@@ -14,7 +14,7 @@ Custom UIButton class for a nice looking Button with Bounce-Effect
 ## Usage
 
 Simply set `STOptimizedUIButton' as your Custom Class in the Identity inspector in your Storyboard.
-<p align="center">
+<p align="center"> 
 <img src="./Preview/STOptimizedUIButton_CustomClass.png" alt="CustomClass" title="CustomClass">
 </p>
 Now you can start by designing your OptimizedButton
