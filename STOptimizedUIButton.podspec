@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "STOptimizedUIButton"
   s.version          = "0.1.0"
-  s.summary          = "A custom UIButton class to get a nice looking UIButton with Bounce-Effects and IBDesignable support"
+  s.summary          = "Custom UIButton class for a nice looking Button with Bounce-Effect"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
