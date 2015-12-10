@@ -34,7 +34,7 @@ pod "STOptimizedUIButton"
 
 ## Author
 
-SvenTiigi
+Sven Tiigi
 
 ## License
 
