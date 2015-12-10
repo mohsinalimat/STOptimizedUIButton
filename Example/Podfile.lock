@@ -1,0 +1,14 @@
+PODS:
+  - STOptimizedUIButton (0.1.0)
+
+DEPENDENCIES:
+  - STOptimizedUIButton (from `../`)
+
+EXTERNAL SOURCES:
+  STOptimizedUIButton:
+    :path: ../
+
+SPEC CHECKSUMS:
+  STOptimizedUIButton: 04b827a8a179f2853c06485c87d7c5a0a578b9f0
+
+COCOAPODS: 0.39.0

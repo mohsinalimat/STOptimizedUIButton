@@ -1,24 +1,33 @@
 //
 //  ViewController.swift
-//  STOptimizedUIButton
+//  STAppStoreUIButton
 //
-//  Created by SvenTiigi on 12/10/2015.
+//  Created by SvenTiigi on 12/09/2015.
 //  Copyright (c) 2015 SvenTiigi. All rights reserved.
 //
 
 import UIKit
+import STOptimizedUIButton
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var letsGoButton: UIButton!
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var confirmButton: UIButton!
+    @IBOutlet weak var buyButton: UIButton!
+    @IBOutlet weak var unlockButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.unlockButton.toAppStoreButton(setBorderColor: UIColor.blueColor(), setTitleColor: UIColor.whiteColor(), setFillColor: UIColor.blueColor(), setHighlightedTextColor: UIColor.whiteColor(),isFilled: true, shoudlAnimate: true)
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func buttonTouched(sender: UIButton) {
+        print("Button with Title: \"\(sender.currentTitle!)\" was tapped")
+        
     }
-
 }
 

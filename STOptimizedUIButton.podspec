@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "STOptimizedUIButton"
   s.version          = "0.1.0"
-  s.summary          = "A short description of STOptimizedUIButton."
+  s.summary          = "A custom UIButton class to get a nice looking UIButton with Bounce-Effects and IBDesignable support"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,14 +17,13 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+                        Simply add the STOptimizedButton to your UIButton as a custom class in your Storyboard and customize it.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/STOptimizedUIButton"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/SvenTiigi/STOptimizedUIButton"
   s.license          = 'MIT'
   s.author           = { "SvenTiigi" => "sven@tiigi.de" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/STOptimizedUIButton.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/SvenTiigi/STOptimizedUIButton.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true

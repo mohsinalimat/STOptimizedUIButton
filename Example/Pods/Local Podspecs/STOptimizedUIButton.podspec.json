@@ -1,0 +1,25 @@
+{
+  "name": "STOptimizedUIButton",
+  "version": "0.1.0",
+  "summary": "A short description of STOptimizedUIButton.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/STOptimizedUIButton",
+  "license": "MIT",
+  "authors": {
+    "SvenTiigi": "sven@tiigi.de"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/STOptimizedUIButton.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "STOptimizedUIButton": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
